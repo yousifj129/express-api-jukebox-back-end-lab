@@ -4,8 +4,8 @@ const trackController = require("../controllers/tracks")
 
 router.post("/",trackController.createTrack)
 router.get("/", trackController.indexTrack)
-router.get("/:id", trackController.showTrack)
-router.put("/:id", trackController.updateTrack)
-router.delete("/:id", trackController.deleteTrack)
+router.get("/:trackId", trackController.showTrack)
+router.put("/:trackId", trackController.updateTrack)
+router.delete("/:trackId", trackController.deleteTrack)
 
 module.exports = router
